@@ -10,6 +10,7 @@
 #
 
 import sys
+import time
 
 class Error(Exception):
     pass
@@ -151,7 +152,10 @@ if __name__ == "__main__":
     if n < 1 or n > 6:
         print "n must be between 1 and 6 inclusive"
         print
+        
+        start_time=time.time() 
         usage()
 
     busy_beaver(n)
+    print time.time()-start_time,"seconds"
 
