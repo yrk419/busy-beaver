@@ -157,5 +157,5 @@ if __name__ == "__main__":
         usage()
 
     busy_beaver(n)
-    print time.time()-start_time,"seconds"
+  //  print time.time()-start_time,"seconds"
 
